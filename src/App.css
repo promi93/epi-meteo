@@ -14,14 +14,20 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    225deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 0.34079569327731096) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.396);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 100px;
 }
 
 .App-link {
@@ -36,3 +42,54 @@
     transform: rotate(360deg);
   }
 }
+
+/* projecy */
+.Weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Weather form {
+  flex-direction: column;
+  align-items: center;
+}
+
+.Weather label {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+label p {
+  font-size: 20px;
+}
+
+.Weather input {
+  padding: 5px;
+  font-size: 20px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.Weather button {
+  padding: 5px 10px;
+  font-size: 20px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.Weather button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.Weather-data {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* SideWeather */
