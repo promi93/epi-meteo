@@ -1,3 +1,8 @@
+body {
+  background-image: url(./assets/img/nat.gif);
+  background-size: cover;
+}
+
 .App {
   text-align: center;
 }
@@ -14,20 +19,14 @@
 }
 
 .App-header {
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    225deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 0.34079569327731096) 50%,
-    rgba(252, 176, 69, 1) 100%
-  );
   box-shadow: 3px 3px 10px 3px rgba(0, 0, 0, 0.396);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
-  margin-bottom: 100px;
+  text-decoration: none;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.519);
 }
 
 .App-link {
@@ -45,51 +44,66 @@
 
 /* projecy */
 .Weather {
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+.Weather form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Weather form {
-  flex-direction: column;
-  align-items: center;
-}
-
-.Weather label {
-  margin-bottom: 10px;
-  font-size: 20px;
-}
-
 label p {
   font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 3px black;
+}
+
+::placeholder {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 15px;
 }
 
 .Weather input {
   padding: 5px;
   font-size: 20px;
-  border: 2px solid gray;
-  border-radius: 5px;
+  border: 2px solid rgb(255, 254, 254);
+  border-radius: 20px;
   margin-right: 10px;
+  background-color: transparent;
+  outline: none;
+  color: rgb(255, 255, 255);
 }
 
 .Weather button {
+  margin-top: 20px;
   padding: 5px 10px;
-  font-size: 20px;
-  border: 2px solid gray;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #000;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: rgb(165, 31, 71);
   cursor: pointer;
 }
 
 .Weather button:hover {
-  background-color: #000;
-  color: #fff;
+  background-color: black;
+  color: white;
 }
 
 .Weather-data {
   margin-top: 20px;
   text-align: center;
+  color: whitesmoke;
+  border-radius: 20px;
+  padding: 20px;
+  text-shadow: 2px 2px 2px black;
 }
 
-/* SideWeather */
+.Weather-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}

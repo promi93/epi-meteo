@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
+import logo from "../assets/img/logo.png";
 
 const MyNav = () => {
   return (
-    <Link className="App App-header">
-      <h1>What is the weather like? </h1>
-    </Link>
+    <div style={{ display: "flex", padding: "20px" }}>
+      <img style={{ width: "100px" }} src={logo} alt="" />
+      <h1>Epi - Weather </h1>
+    </div>
   );
 };
 

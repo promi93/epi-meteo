@@ -58,7 +58,12 @@ function Weather() {
       <form onSubmit={handleFormSubmit}>
         <label>
           <p>Seleziona la città:</p>
-          <input type="text" value={city} onChange={handleCityChange} />
+          <input
+            type="text"
+            placeholder="Cerca città..."
+            value={city}
+            onChange={handleCityChange}
+          />
         </label>
         <button type="submit">Cerca</button>
       </form>
